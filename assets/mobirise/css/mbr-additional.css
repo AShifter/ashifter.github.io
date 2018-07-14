@@ -1814,6 +1814,26 @@ body {
     text-align: center;
   }
 }
+.cid-qXOWEcY4BO {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background-color: #cd201f;
+}
+@media (min-width: 992px) {
+  .cid-qXOWEcY4BO .mbr-figure {
+    padding-right: 4rem;
+  }
+}
+@media (max-width: 991px) {
+  .cid-qXOWEcY4BO .mbr-figure {
+    padding-bottom: 3rem;
+  }
+}
+@media (max-width: 767px) {
+  .cid-qXOWEcY4BO .mbr-text {
+    text-align: center;
+  }
+}
 .cid-qXOnZi3uMR {
   padding-top: 60px;
   padding-bottom: 60px;
