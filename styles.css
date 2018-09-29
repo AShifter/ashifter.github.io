@@ -1,0 +1,44 @@
+.face
+{
+    color:white;
+    font-family: 'Segoe UI';
+    font-size:650%;
+    text-align: left;
+    margin-left:8%;
+    font-weight: 100;
+}
+
+.largetext
+{
+    color:white;
+    font-family: 'Segoe UI';
+    font-size:135%;
+    text-align: left;
+    margin-left:8%;
+    font-weight: 200;
+}
+
+.smalltext
+{
+    color:white;
+    font-family: 'Segoe UI';
+    font-size:90%;
+    text-align: left;
+    margin-left:8%;
+    font-weight: 100;
+}
+
+body
+{
+    background-color:#1E64B4;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select:none;
+    user-select:none;
+    -o-user-select:none;
+}
+
+.flex-container
+{
+    display: flex;
+}
