@@ -1,0 +1,108 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Victor Tran
+email: vicr12345@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  The personal page for Victor Tran
+# baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://vicr123.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: vicr12345
+github_username:  vicr123
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vicr123.github.io.tslprj
+  - repo/apt/ubuntu/db/
+  - repo/apt/ubuntu/conf/
+  - repo/apt/ubuntu/incoming/
+
+paginate: 10
+paginate_path: "/posts/page:num/"
+permalink: /posts/:year/:month/:day/:title.html
+  
+collections:
+  - ts_backgrounds
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      icon: "/icon.png"
+  -
+    scope:
+      path: "/theshell/"
+    values:
+      icon: "/images/theshell.png"
+  -
+    scope:
+      path: "/theshell/backgrounds"
+    values:
+      type: ts_backgrounds
+  -
+    scope:
+      path: "/contemporary/"
+    values:
+      icon: "/images/contemporaryIcon.png"
+  -
+    scope:
+      path: "/theslate/"
+    values:
+      icon: "/images/theslateIcon.png"
+  -
+    scope:
+      path: "/thebeat/"
+    values:
+      icon: "/images/thebeatIcon.png"
+  -
+    scope:
+      path: "theshell/help"
+      exclude: "theshell/help/index.html"
+    values:
+      layout: "helpPage"
+      helpIndex: "/theshell/help/"
+      searchFile: "/theshell/help/search.json"
+      project: "theShell"
+      projectIcon: "/images/theshell.png"
+      helpHeader: "rgb(0, 100, 0)"
+  -
+    scope:
+      path: "thecalculator/help"
+      exclude: "thecalculator/help/index.html"
+    values:
+      layout: "helpPage"
+      helpIndex: "/thecalculator/help/"
+      searchFile: "/thecalculator/help/search.json"
+      project: "theCalculator"
+      projectIcon: "/images/thecalculator.svg"
+      helpHeader: "rgb(0, 150, 255)"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      project: "Victor Tran"
+      projectIcon: "/images/smile.png"
+      postHeader: "rgb(0, 100, 255)"
+      author: "Victor Tran"
+      icon: "/icon.png"

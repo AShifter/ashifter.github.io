@@ -1,0 +1,167 @@
+Package: contemporary-cursors
+Version: 1.0
+Maintainer: Victor Tran <vicr12345@gmail.com>
+Architecture: amd64
+Priority: optional
+Section: main
+Filename: pool/main/c/contemporary-cursors/contemporary-cursors_1.0_amd64.deb
+Size: 11444
+SHA256: 75e15ec24517122170cadbff9863e9950522486bde1a69f06a6fd99c9b677975
+SHA1: b3316a6adf0aec81dd75d0ffecac7a24d1c8ec34
+MD5sum: 3fb8197ae6b8776d3af72be328f02291
+Description: Contemporary Cursors
+
+Package: contemporary-icons
+Version: 1.6
+Maintainer: Victor Tran <vicr12345@gmail.com>
+Architecture: amd64
+Priority: optional
+Section: main
+Filename: pool/main/c/contemporary-icons/contemporary-icons_1.6_amd64.deb
+Size: 94204
+SHA256: 1288fe698ad639b85c57c82fca013e1b6073e9b86beed716a7ff2e9c9f40c851
+SHA1: 41904d3c7a7d0933b3256a7417b8bd4aaacba444
+MD5sum: 050c79869d55c4ea69c9c1b93a3d8605
+Description: Contemporary Icon theme
+
+Package: contemporary-ttf
+Version: 2.0
+Maintainer: Victor Tran <vicr12345@gmail.com>
+Architecture: amd64
+Priority: optional
+Section: main
+Filename: pool/main/c/contemporary-ttf/contemporary-ttf_2.0_amd64.deb
+Size: 58576
+SHA256: cec4d219e0e4031ebbc86166190eaa48786e99d9a238876f516b28f4a86d2c04
+SHA1: 2c79995b0e801f3f4b59ea4e23888ba2687cd5e0
+MD5sum: 1f119db51b257c36da5091458e428c4f
+Description: Contemporary Typeface
+
+Package: contemporary-widgets
+Version: 1.6.1
+Maintainer: Victor Tran <vicr12345@gmail.com>
+Architecture: amd64
+Priority: optional
+Section: main
+Filename: pool/main/c/contemporary-widgets/contemporary-widgets_1.6.1_amd64.deb
+Size: 41412
+SHA256: ec0e9e4ccd90b06722e878928ee40ab3bd9fb738b8f475c6698e039f1f68528f
+SHA1: cbd3546cd61ed91a42f88b9c4bad418ebf30ea37
+MD5sum: c595c866281bf72bbb56b9527ceb4a78
+Description: Contemporary Widget Style for Qt
+Depends: libqt5gui5,the-libs
+
+Package: the-libs
+Version: 1.5
+Maintainer: Victor Tran <vicr12345@gmail.com>
+Architecture: amd64
+Priority: optional
+Section: main
+Filename: pool/main/t/the-libs/the-libs_1.5_amd64.deb
+Size: 36152
+SHA256: c0fbea48bcac478fb8ca1612a6aca2f3d356991863f7e9637b4ee064f9f37a73
+SHA1: 5f273bc8a29e7863c8edd6c3136b12bba96df0de
+MD5sum: f62334f2cdcfe483516ed93b58c75841
+Description: Libraries for the* apps
+Depends: libqt5core5a,libqt5dbus5,libqt5gui5,libqt5x11extras5
+
+Package: thebeat
+Version: 1.0
+Maintainer: Victor Tran <vicr12345@gmail.com>
+Architecture: amd64
+Priority: optional
+Section: main
+Filename: pool/main/t/thebeat/thebeat_1.0_amd64.deb
+Size: 78912
+SHA256: b3d3f8738c58b5bc3d5e68c88cfec7e70f667f71a8e1c072f5bab8295702f2e1
+SHA1: 1117dcc630435e7f34aea34135c1e10abc4a93d9
+MD5sum: 4aa4140bfd228f438efae8a671fb0d83
+Description: Audio Player
+Depends: the-libs,phonon4qt5,libtag1v5
+
+Package: theshell
+Version: 7.1.1
+Maintainer: Victor Tran <vicr12345@gmail.com>
+Architecture: amd64
+Priority: optional
+Section: main
+Filename: pool/main/t/theshell/theshell_7.1.1_amd64.deb
+Size: 2863360
+SHA256: a971216ef0d66ffa95d130f6016d6f1dd7da1b2f17b24b15c9690173e2cfbcbf
+SHA1: a28859bb70a4e96029bdb91fe5af9943069244d5
+MD5sum: 8e7c8b0f350f9d02840512297da14242
+Description: Desktop Environment
+Depends: the-libs,libqt5positioning5,libqt5charts5,wmctrl,redshift,kscreen,network-manager,tsscreenlock,ts-qtplatform,libxcb-keysyms1
+Recommends: contemporary-widgets,ts-polkitagent,ts-bt,kwin-x11,contemporary-ttf
+
+Package: theslate
+Version: 0.3
+Maintainer: Victor Tran <vicr12345@gmail.com>
+Architecture: amd64
+Priority: optional
+Section: main
+Filename: pool/main/t/theslate/theslate_0.3_amd64.deb
+Size: 66448
+SHA256: 71b8e463e42380703ddfce9c698886d62846c4da3a1272d86a288df8c303f31a
+SHA1: bd4d48336002d7ed41cb47e4bd488756b75c09c2
+MD5sum: 0c29f98d9e41bd0beb132a85a2269e82
+Description: Text Editor
+Depends: the-libs,libqt5websockets5
+
+Package: theterminal
+Version: 2.1
+Maintainer: Victor Tran <vicr12345@gmail.com>
+Architecture: amd64
+Priority: optional
+Section: main
+Filename: pool/main/t/theterminal/theterminal_2.1_amd64.deb
+Size: 41944
+SHA256: 783875e13164566d3209ae22ea09d8e5058450ec2e9f97016e3b16a8a40415a9
+SHA1: e6760e0080425c66560b3df69b08e263ec3545dd
+MD5sum: 293b5fc9f058ab0003e207c6368d1ff7
+Description: Terminal Emulator
+Depends: the-libs,libqtermwidget5-0
+
+Package: ts-qtplatform
+Version: 1.8
+Maintainer: Victor Tran <vicr12345@gmail.com>
+Architecture: amd64
+Priority: optional
+Section: main
+Filename: pool/main/t/ts-qtplatform/ts-qtplatform_1.8_amd64.deb
+Size: 418592
+SHA256: 4ee8be729e2f2d84780b9eb5f5e159b937c9d20827cbf081dce41bad5842cfa3
+SHA1: 4bc85445593476e22e7d8811835bc9d9043b9252
+MD5sum: bcda438037e950983c400fc12bc0e2e2
+Description: Platform Abstraction for theShell
+Depends: the-libs,libqt5multimedia5,libqt5svg5,libxcursor1
+Recommends: contemporary-widgets,contemporary-cursors,contemporary-icons
+
+Package: ts-startsession
+Version: 1.0
+Maintainer: Victor Tran <vicr12345@gmail.com>
+Architecture: amd64
+Priority: optional
+Section: main
+Filename: pool/main/t/ts-startsession/ts-startsession_1.0_amd64.deb
+Size: 5580
+SHA256: 5360d02f55da7b72aec34771447528e3f7ebea70557ca704eb2cd2920c2daaa1
+SHA1: 8e79112149bebe33d6be09057bfa1d2396707741
+MD5sum: 92f8f937ee8e4431534c27878398d3fb
+Description: theShell Session Starter
+Depends: the-libs
+
+Package: tsscreenlock
+Version: 2.3
+Maintainer: Victor Tran <vicr12345@gmail.com>
+Architecture: amd64
+Priority: optional
+Section: main
+Filename: pool/main/t/tsscreenlock/tsscreenlock_2.3_amd64.deb
+Size: 310540
+SHA256: ce2892704da6df4f9fe36942b09f0b5844f953c9b61a3652b824da1ae84983f5
+SHA1: 26ad93e96920b38c8ad631db35651302c79584ce
+MD5sum: cfe1bcda1c729f617cd762c7225dad18
+Description: theShell Screen Locker
+Depends: the-libs,libxi6
+

@@ -1,0 +1,13 @@
+---
+---
+
+[
+    ""
+    {% for folder in site.static_files %}
+        {% if folder.path contains '/theshell/backgrounds/' %}
+            {% if folder.path contains '/metadata.json' %},
+                "{{ folder.path }}"
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+]
