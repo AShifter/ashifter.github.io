@@ -1,5 +1,0 @@
-Component: main
-Origin: theapps
-Label: theapps
-Architecture: amd64
-Description: apt repository for the* apps
