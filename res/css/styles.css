@@ -6,7 +6,7 @@ html, body {
 }
 
 .bg-shapes {
-    background-image: url(../img/bg.svg);
+    background-image: url(../img/svg/bg.svg);
     background-size: 25%;
     background-repeat: round;
     width: 100%;
@@ -16,6 +16,12 @@ html, body {
 .jumbotron
 {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9);
+}
+
+.card
+{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9);
+    width: 350px;
 }
 
 img.center
