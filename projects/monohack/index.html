@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	    <link href="../../res/css/bootstrap.min.css" rel="stylesheet">
+		<link href="../../res/css/styles.css" rel="stylesheet">
+		<link href="../../res/css/all.min.css" rel="stylesheet">
+		<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+		<script src="../../res/js/showdown.min.js"></script>
+		<script src="../../res/js/jquery-3.3.1.min.js"></script>
+	    <title>AShifter | MonoHack</title>
+	</head>
+
+	<style>
+		img
+		{
+    		display: block;
+      		margin-left: auto;
+      		margin-right: auto;
+    		max-width: 80%;
+		}
+
+		a
+		{
+			text-decoration: underline;
+		}
+
+		.card
+		{
+			width: 100%;
+		}
+	</style>
+
+	<script>
+		function ConvertMarkdownPage()
+		{
+			$.ajax(
+					{
+    				url:'https://raw.githubusercontent.com/AShifter/MonoHack/master/README.md',
+    				success: function (data)
+						{
+							var converter = new showdown.Converter();
+							document.getElementById("contentArea").innerHTML = converter.makeHtml(data);
+    					}
+  					}
+				);
+		}
+	</script>
+
+    <body class="bg-shapes" onload="ConvertMarkdownPage()">
+	    <div class="container">
+			<div class="jumbotron">
+				<!-- Region autofilled by Showdown converter -->
+			</div>
+			
+			<div class="card">
+					<div class="card-header" style="font-size: 14pt;">
+					 <i class="fab fa-github"><span style="font-size: 20pt;">&nbsp;</span></i><b>README.md</b>
+					</div>
+					<div class="card-body">
+					  <p class="card-text" id="contentArea"></p>
+					</div>
+				  </div>
+
+    </body>
+</html>
