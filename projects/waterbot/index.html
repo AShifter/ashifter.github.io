@@ -2,15 +2,77 @@
 <html lang="en">
     <head>
 	    <link href="../../res/css/bootstrap.min.css" rel="stylesheet">
-	    <link href="../../res/css/styles.css" rel="stylesheet">
-	    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+		<link href="../../res/css/all.min.css" rel="stylesheet">
+		<link href="../../res/css/styles.css" rel="stylesheet">
+		<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+		<script src="../../res/js/showdown.min.js"></script>
+		<script src="../../res/js/jquery-3.3.1.min.js"></script>
 	    <title>AShifter | WaterBot</title>
-    </head>
-    <body class="bg-shapes">
+	</head>
+	<style>
+	img
+	{
+    	max-width: 100%;
+	}
+
+	a
+	{
+		text-decoration: underline;
+	}
+
+	.card
+	{
+		width: 100%;
+	}
+		
+	h1:after
+	{
+    	content: ' ';
+    	display: block;
+    	border: 1px solid white;
+		margin-bottom: 1.5%;
+	}
+	
+	code
+	{
+		background-color:rgb(40, 40, 40);
+    	color: orange;
+	}
+
+	pre
+	{
+		background-color:rgb(40, 40, 40);
+		color: orange;
+	}
+	</style>
+	<script>
+		function ConvertMarkdownPage()
+		{
+			$.ajax(
+					{
+    				url:'https://raw.githubusercontent.com/AShifter/WaterBot/master/README.md',
+    				success: function (data)
+						{
+							var converter = new showdown.Converter();
+							document.getElementById("contentArea").innerHTML = converter.makeHtml(data);
+    					}
+  					}
+				);
+		}
+	</script>
+    <body class="bg-shapes" onload="ConvertMarkdownPage()">
 	    <div class="container">
-		    <div class="jumbotron">
-			    <img src="../../res/img/svg/waterbot.svg" alt="waterbot logo" class="center" draggable="false" width="50%"><br>
-			    <p style="text-align: center">The easy Discord bot. And a work in progress page.</p>
-		    </div>
+			<div class="jumbotron">
+					<a href="../../"><img src="../../res/img/svg/ashifter.svg" alt="ashifter logo" class="center" draggable="false" width="50%"></a>
+			</div>
+			<div class="card">
+				<div class="card-header" style="font-size: 14pt;">
+					<a href="https://www.github.com/ashifter/waterbot"><i class="fab fa-github"><span style="font-size: 20pt;">&nbsp;</span></i><b>README.md</b></a>
+				</div>
+			<div class="card-body">
+				<p class="card-text" id="contentArea"><!-- Region autofilled by Showdown converter --></p>
+			</div>
+		</div>
+		<br>
     </body>
 </html>
