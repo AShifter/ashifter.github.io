@@ -16,10 +16,18 @@
   <priority>0.80</priority>
 </url>
 <url>
+  <loc>https://ashifter.github.io/projects/monohack/</loc>
+  <lastmod>2018-12-05T15:45:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>https://ashifter.github.io/projects/nou/</loc>
   <lastmod>2018-12-05T15:45:55+00:00</lastmod>
   <priority>0.80</priority>
 </url>
-
-
+<url>
+  <loc>https://ashifter.github.io/about</loc>
+  <lastmod>2018-12-05T15:45:55+00:00</lastmod>
+  <priority>0.50</priority>
+</url>
 </urlset>
