@@ -1,0 +1,26 @@
+body
+{
+    margin: 15px;
+}
+
+select 
+{
+    border: 0px;
+    color: white;
+    background-color: #1C1C1C;
+    border-radius: 5px; 
+    -moz-border-radius: 5px; 
+    -webkit-border-radius: 5px; 
+}
+
+textarea
+{
+    border: 0px;
+    color: white;
+    background-color: #1C1C1C;
+    border-radius: 5px; 
+    -moz-border-radius: 5px; 
+    -webkit-border-radius: 5px; 
+    resize: none;
+    width: 100%;
+}
