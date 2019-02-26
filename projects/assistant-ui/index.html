@@ -1,42 +1,41 @@
 <!DOCTYPE html>
 <html>
 	<head>
-
 		<script src='../../res/js/responsivevoice.js'></script>
 		<link href="../../res/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 		<link href="res/css/styles.css" rel="stylesheet" type="text/css">
 		<link href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" rel="stylesheet">
 		<script>
-		    function updateNames(assistantName)
-		    {
-		        var elements = document.getElementsByClassName("assistantNameCard");
-		        var names = '';
-		        for(var i=0; i<elements.length; i++) 
-		        {
-		            elements[i].innerHTML = assistantName;
-		        }
-		    }
+		          function updateNames(assistantName)
+		          {
+		              var elements = document.getElementsByClassName("assistantNameCard");
+		              var names = '';
+		              for(var i=0; i<elements.length; i++) 
+		              {
+		                  elements[i].innerHTML = assistantName;
+		              }
+		          }
 
-		    var delay = (function()
-		    {
-		        var timer = 0;
-		        return function(callback, ms)
-		        {
-		            clearTimeout(timer);
-		            timer = setTimeout(callback, ms);
-		        };
-		    })();
+		          var delay = (function()
+		          {
+		              var timer = 0;
+		              return function(callback, ms)
+		              {
+		                  clearTimeout(timer);
+		                  timer = setTimeout(callback, ms);
+		              };
+		          })();
 
-		    function tellAssistant(message, voice)
-		    {
-		        var e = document.getElementById("nameDropdown");
-		        var strUser = e.options[e.selectedIndex].value;
-		        responsiveVoice.speak(`Hey, ${strUser}.`, voice);
-		        delay(function()
-		        {
-		            responsiveVoice.speak(message, voice)
-		        }, 2000);
-	        }
+		          function tellAssistant(message, voice)
+		          {
+		              var e = document.getElementById("nameDropdown");
+		              var strUser = e.options[e.selectedIndex].value;
+		              responsiveVoice.speak(`Hey, ${strUser}.`, voice);
+		              delay(function()
+		              {
+		                  responsiveVoice.speak(message, voice)
+		              }, 2000);
+		          }
 		</script>
 		<title>
 			AShifter | Voice Assistant Controller
@@ -46,7 +45,11 @@
 		<div class="card" style="width: 100%;">
 			<div class="card-body">
 				<p class="card-text">
-					My assistant's name is: <span><select id="nameDropdown" onclick="updateNames(document.getElementById('nameDropdown').options[document.getElementById('nameDropdown').selectedIndex].value);">
+						<div style="width:300px;vertical-align:top;font-family: Arial;font-size:9pt;line-height: normal;" class="float-right">
+								<a href="//responsivevoice.org/" rel="license" style="align:right"><img src="https://responsivevoice.org/wp-content/uploads/2014/08/120x31.png" style="float:left;padding-right:2px" title="ResponsiveVoice Text To Speech"></a><span property="dct:title"><a href="//responsivevoice.org/" target="_blank" title="ResponsiveVoice Text To Speech">ResponsiveVoice</a></span> used under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" rel="license" title="Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License">Non-Commercial License</a>
+						</div>
+						<div>
+					My assistant's name is: <select id="nameDropdown" onclick="updateNames(document.getElementById('nameDropdown').options[document.getElementById('nameDropdown').selectedIndex].value);">
 						<option value="Alexa">
 							Alexa
 						</option>
@@ -65,8 +68,7 @@
 						<option value="Siri">
 							Siri
 						</option>
-					</select><br>
-				</span>
+					</select></div>
 				</p>
 			</div>
 		</div><br>
@@ -81,7 +83,7 @@
 				</div>
 			</div><br>
 			<div class="card">
-				<div class="card-body">
+				<div class="card-body d-flex flex-column">
 					<h5 class="card-title">
 						Power
 					</h5>
@@ -94,13 +96,13 @@
 								off
 							</option>
 						</select></span> the lights.
-					</p><button class="btn btn-primary" onclick="tellAssistant(`Turn ${document.getElementById('lightValueDropdown').options[document.getElementById('lightValueDropdown').selectedIndex].value}, the lights.`, 'US English Female');" style="width: 100%" type="button">Run</button>
+					</p><button class="btn btn-primary mt-auto" onclick="tellAssistant(`Turn ${document.getElementById('lightValueDropdown').options[document.getElementById('lightValueDropdown').selectedIndex].value}, the lights.`, 'US English Female');" style="width: 100%" type="button">Run</button>
 				</div>
 			</div><br>
 			<div class="card">
-				<div class="card-body">
+				<div class="card-body d-flex flex-column">
 					<h5 class="card-title">
-                        Brightness
+						Brightness
 					</h5>
 					<p class="card-text">
 						<span class="text-muted">Hey <b class="assistantNameCard">Alexa</b>,</span> Set brightness of the lights to <span><select id="lightBrightnessDropdown" onclick="document.getElementById('lightBulb').style.opacity = document.getElementById('lightBrightnessDropdown').options[document.getElementById('lightBrightnessDropdown').selectedIndex].value / 100;">
@@ -168,11 +170,11 @@
 								0
 							</option>
 						</select></span> %.
-					</p><button class="btn btn-primary" onclick="tellAssistant(`Set brightness of the lights to ${document.getElementById('lightBrightnessDropdown').options[document.getElementById('lightBrightnessDropdown').selectedIndex].value}%.,`, 'US English Female');" style="width: 100%" type="button">Run</button>
+					</p><button class="btn btn-primary mt-auto" onclick="tellAssistant(`Set brightness of the lights to ${document.getElementById('lightBrightnessDropdown').options[document.getElementById('lightBrightnessDropdown').selectedIndex].value}%.,`, 'US English Female');" style="width: 100%" type="button">Run</button>
 				</div>
 			</div><br>
 			<div class="card">
-				<div class="card-body">
+				<div class="card-body d-flex flex-column">
 					<h5 class="card-title">
 						Color
 					</h5>
@@ -218,13 +220,13 @@
 								Daylight
 							</option>
 						</select></span>.
-					</p><button class="btn btn-primary" onclick="tellAssistant(`Set Color of the lights to ${document.getElementById('lightColorDropdown').options[document.getElementById('lightColorDropdown').selectedIndex].value}.,`, 'US English Female');" style="width: 100%" type="button">Run</button>
+					</p><button class="btn btn-primary mt-auto" onclick="tellAssistant(`Set Color of the lights to ${document.getElementById('lightColorDropdown').options[document.getElementById('lightColorDropdown').selectedIndex].value}.,`, 'US English Female');" style="width: 100%" type="button">Run</button>
 				</div>
 			</div>
 		</div><br>
 		<div class="card-deck">
 			<div class="card">
-				<div class="card-body">
+				<div class="card-body d-flex flex-column">
 					<center>
 						<h4 class="card-title">
 							Music
@@ -235,35 +237,95 @@
 			<div class="card">
 				<div class="card-body">
 					<h5 class="card-title">
-						Spotify
+						Play
 					</h5>
 					<p class="card-text">
 						<span class="text-muted">Hey <b class="assistantNameCard">Alexa</b>,</span> Play <span>
-						<textarea id="spotifySongNameBox" rows="1"></textarea></span> on Spotify.
-					</p><button class="btn btn-primary" onclick="tellAssistant(`Play ${document.getElementById('spotifySongNameBox').value} on Spotify.`, 'US English Female');" style="width: 100%" type="button">Run</button>
+						<textarea id="songNameBox" rows="1"></textarea></span> on <span><select id="streamingServiceDropdown">
+							<option value="spotify">
+								Spotify
+							</option>
+							<option value="pandora">
+								Pandora
+							</option>
+							<option value="amazon music">
+								Amazon Music
+							</option>
+							<option value="google play music">
+								Google Play Music
+							</option>
+							<option value="youtube music">
+								YouTube Music
+							</option>
+							<option value="youtube">
+								YouTube
+							</option>
+						</select></span>
+					</p><button class="btn btn-primary mt-auto" onclick="tellAssistant(`Play ${document.getElementById('songNameBox').value} on ${document.getElementById('streamingServiceDropdown').value}.`, 'US English Female');" style="width: 100%" type="button">Run</button>
 				</div>
 			</div><br>
 			<div class="card">
-				<div class="card-body">
+				<div class="card-body d-flex flex-column">
 					<h5 class="card-title">
-						Pandora
+						Control
 					</h5>
 					<p class="card-text">
-						<span class="text-muted">Hey <b class="assistantNameCard">Alexa</b>,</span> Play <span>
-						<textarea id="pandoraSongNameBox" rows="1"></textarea></span> on Pandora.
-					</p><button class="btn btn-primary" onclick="tellAssistant(`Play ${document.getElementById('pandoraSongNameBox').value} on Pandora.`, 'US English Female');" style="width: 100%" type="button">Run</button>
+						<span class="text-muted">Hey <b class="assistantNameCard">Alexa</b>, <select id="songControlDropdown">
+							<option value="continue the">
+								Continue the
+							</option>
+							<option value="stop the">
+								Stop the
+							</option>
+							<option value="go to the next">
+								Go to the next
+							</option>
+							<option value="go to the previous">
+								Go to the previous
+							</option>
+						</select></span> song.
+					</p><button class="btn btn-primary mt-auto" onclick="tellAssistant(`${document.getElementById('songControlDropdown').value} song.`, 'US English Female');" style="width: 100%" type="button">Run</button>
 				</div>
 			</div><br>
 			<div class="card">
-				<div class="card-body">
+				<div class="card-body d-flex flex-column">
 					<h5 class="card-title">
-						Amazon Music
+						Volume
 					</h5>
-					<p class="card-text"></p>
 					<p class="card-text">
-						<span class="text-muted">Hey <b class="assistantNameCard">Alexa</b>,</span> Play <span>
-						<textarea id="amazonSongNameBox" rows="1"></textarea></span> on Amazon Music.
-					</p><button class="btn btn-primary" onclick="tellAssistant(`Play ${document.getElementById('amazonSongNameBox').value} on Amazon Music.`, 'US English Female');" style="width: 100%" type="button">Run</button>
+						<span class="text-muted">Hey <b class="assistantNameCard">Alexa</b>,</span> Set volume to level <span><select id="songVolumeDropdown">
+							<option value="10">
+								10
+							</option>
+							<option value="9">
+								9
+							</option>
+							<option value="8">
+								8
+							</option>
+							<option value="7">
+								7
+							</option>
+							<option value="6">
+								6
+							</option>
+							<option value="5">
+								5
+							</option>
+							<option value="4">
+								4
+							</option>
+							<option value="3">
+								3
+							</option>
+							<option value="2">
+								2
+							</option>
+							<option value="1">
+								1
+							</option>
+						</select></span>.
+					</p><button class="btn btn-primary mt-auto" onclick="tellAssistant(`Set volume to level ${document.getElementById('songVolumeDropdown').value}.`, 'US English Female');" style="width: 100%" type="button">Run</button>
 				</div>
 			</div>
 		</div><br>
@@ -278,7 +340,7 @@
 				</div>
 			</div><br>
 			<div class="card">
-				<div class="card-body">
+				<div class="card-body d-flex flex-column">
 					<h5 class="card-title">
 						Tell Me
 					</h5>
@@ -303,11 +365,11 @@
 								scary story
 							</option>
 						</select></span>.
-					</p><button class="btn btn-primary" onclick="tellAssistant(`Tell me a ${document.getElementById('tellMeDropdown').options[document.getElementById('tellMeDropdown').selectedIndex].value}.`, 'US English Female');" style="width: 100%" type="button">Run</button>
+					</p><button class="btn btn-primary mt-auto" onclick="tellAssistant(`Tell me a ${document.getElementById('tellMeDropdown').options[document.getElementById('tellMeDropdown').selectedIndex].value}.`, 'US English Female');" style="width: 100%" type="button">Run</button>
 				</div>
 			</div><br>
 			<div class="card">
-				<div class="card-body">
+				<div class="card-body d-flex flex-column">
 					<h5 class="card-title">
 						Name
 					</h5>
@@ -328,28 +390,23 @@
 						</select></span>.
 					</p>
 					<p class="text-muted" style="font-size: 8pt">
-						Amazon Alexa only.
+						Amazon Alexa devices only.
 					</p>
-					<p></p><button class="btn btn-primary" onclick="tellAssistant(`Set your name to ${document.getElementById('alternateNamesDropdown').options[document.getElementById('alternateNamesDropdown').selectedIndex].value}.`, 'US English Female');" style="width: 100%" type="button">Run</button>
+					<p></p><button class="btn btn-primary mt-auto" onclick="tellAssistant(`Set your name to ${document.getElementById('alternateNamesDropdown').options[document.getElementById('alternateNamesDropdown').selectedIndex].value}.`, 'US English Female');" style="width: 100%" type="button">Run</button>
 				</div>
 			</div><br>
 			<div class="card" style="width: 18rem;">
-				<div class="card-body">
+				<div class="card-body d-flex flex-column">
 					<h5 class="card-title">
 						Custom
 					</h5>
 					<p class="card-text">
 						<span class="text-muted">Hey <b class="assistantNameCard">Alexa</b>, 
 						<textarea id="customTextbox" rows="3"></textarea></span>
-					</p><button class="btn btn-primary" onclick="tellAssistant(document.getElementById('customTextbox').value, 'US English Female');" style="width: 100%" type="button">Run</button>
+					</p><button class="btn btn-primary mt-auto" onclick="tellAssistant(document.getElementById('customTextbox').value, 'US English Female');" style="width: 100%" type="button">Run</button>
 				</div>
 			</div>
-		</div>
+		</div><br>
 		<br>
-		<br>
-		<div style="width:300px;vertical-align:top;font-family: Arial;font-size:9pt;line-height: normal">
-			<a rel="license" href="//responsivevoice.org/"><img title="ResponsiveVoice Text To Speech" src="https://responsivevoice.org/wp-content/uploads/2014/08/120x31.png" style="float:left;padding-right:2px" /></a><span xmlns:dct="https://purl.org/dc/terms/" property="dct:title"><a href="//responsivevoice.org/" target="_blank" title="ResponsiveVoice Text To Speech">ResponsiveVoice</a></span> used under <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" title="Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License">Non-Commercial License</a></div>
-			<div style="clear:both;">&nbsp;
-		</div>
 	</body>
 </html>
