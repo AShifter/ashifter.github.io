@@ -1,0 +1,18 @@
+.bottom-banner
+{
+    background-color: #06272C;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    z-index: 998;
+}
+
+.bottom-banner p
+{
+    text-align: center;
+    color: #F1F1F1;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 10px;
+}

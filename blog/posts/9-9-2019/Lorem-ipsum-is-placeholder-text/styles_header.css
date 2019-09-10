@@ -1,0 +1,24 @@
+.top-banner
+{
+    background-color: #06272C;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110px;
+    z-index: 999;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.top-banner p
+{
+    text-align: center;
+    color: #E6641E;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 36px;
+}
