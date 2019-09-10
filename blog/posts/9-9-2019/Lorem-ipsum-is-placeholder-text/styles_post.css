@@ -6,21 +6,21 @@ body
 p
 {
     color: #F0F0F0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 12pt;
 }
 
 h1
 {
     color: #F0F0F0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 24pt;
 }
 
 h2
 {
     color: #F0F0F0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 16pt;
     margin-bottom: 10px;
 }
@@ -34,7 +34,7 @@ h2
 .infoTag
 {
     color: #E6641E;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 8pt;
     margin-bottom: 40px;
 }
