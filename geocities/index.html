@@ -30,7 +30,9 @@
             {
                 background-image: url("./img/bg.gif");
                 background-color: #000000;
+                color: #ffffff;
                 font-family: 'Comic Sans MS';
+                font-size: 10pt;
             }
         
             table
@@ -39,29 +41,18 @@
                 height: 60%;
                 background-color:#333333;
                 margin:auto;
-                border: 3px solid green;
+                border: 3px solid #00FF00;
             }
 
             tr, td
             {
-                border: 3px solid green;
+                border: 3px solid #00FF00;
                 padding: 2%;
             }
-        
-            p
-            {
-                color:#ffffff;
-            }
 
-            h1
-            {
-                color:#ffffff;
-            }
-
-            h6
+            a, a:hover, a:visited
             {
                 color: #ffffff;
-                font-size: 8pt;
             }
 
             #content
@@ -69,21 +60,28 @@
                 vertical-align: top;
             }
 
-            a, a:hover, a:visited
+            #emote
             {
-                color: #ffffff;
+                height: 20px;
+            }
+
+            #thumb
+            {
+                height: 60px;
             }
         </style>
         <bgsound src="music/grabbag.mid" loop="infinite">
         <audio src="music/grabbag.mp3" type="audio/mp3" autoplay loop></audio>
     </head>
     <header>
-        <center><img src="img/logo.gif" alt="Logan's Web Site"></center>
+        <center>
+            <img src="img/logo.gif" alt="Logan's Web Site">
+        </center>
     </header>
     <body>
         <!-- Title Bar Table -->
-        <table style="height:20px">
-            <tr style="padding:0%; background-color: green;">
+        <table id="emote">
+            <tr style="padding:0%; background-color: #00FF00;">
                 <td style="padding:0%; border: 3px double #333333;">
                     <a href="http://ashifter.github.io">
                         <img src="img/window/min.gif" id="btnHide">
@@ -103,7 +101,7 @@
             <tr>
                 <td>
                     <center>
-                        <p>my Badgers:</p>
+                        <p>my badges:</p>
                     </center>
                     <center>
                         <a href="http://budugllydesign.com/frame9806/hateframe.html">
@@ -142,39 +140,44 @@
                     </center>
                 </td>
                 <td id="content">
-                    <center><marquee behavior="alternate"><h1>You Have Reached <b style="color: green">Logans</b> Web Site</h1></marquee></center>
+                    <center>
+                        <marquee behavior="alternate"><h1>You Have Reached <b style="color: #00FF00">Logans</b> Web Site</h1></marquee>
+                    </center>
                     <center>
                         <hr>
                             <img src="img/underconstruction.gif">
+                            <span style="color: #FF0000;">!!! DANGER !!!</span>
                             <img src="img/underconstruction.gif">
+                            <marquee behavior="alternate" scrollamount="20" direction="right"><h2 style="color: #FFFF00;">!!! UNDER CONSTRUCTION !!!</h2></marquee>
+                            <marquee behavior="alternate" scrollamount="20" direction="left"><h2 style="color: #FFFF00;">!!! UNDER CONSTRUCTION !!!</h2></marquee>
                             <img src="img/underconstruction.gif">
-                            <span style="color: red;">!!! DANGER !!!</span>
-                            <img src="img/underconstruction.gif">
-                            <img src="img/underconstruction.gif">
-                            <img src="img/underconstruction.gif">
-                            <span style="color: red;">!!! DANGER !!!</span>
-                            <img src="img/underconstruction.gif">
-                            <img src="img/underconstruction.gif">
-                            <img src="img/underconstruction.gif">
-                            <marquee behavior="scroll" scrollamount="40" direction="right"><h2 style="color: yellow;">!!! UNDER CONSTRUCTION !!!</h2></marquee>
-                            <marquee behavior="scroll" scrollamount="40" direction="left"><h2 style="color: yellow;">!!! UNDER CONSTRUCTION !!!</h2></marquee>
-                            <img src="img/underconstruction.gif">
-                            <img src="img/underconstruction.gif">
-                            <img src="img/underconstruction.gif">
-                            <span style="color: red;">!!! DANGER !!!</span>
-                            <img src="img/underconstruction.gif">
-                            <img src="img/underconstruction.gif">
-                            <img src="img/underconstruction.gif">
-                            <span style="color: red;">!!! DANGER !!!</span>
-                            <img src="img/underconstruction.gif">
-                            <img src="img/underconstruction.gif">
+                            <span style="color: #FF0000;">!!! DANGER !!!</span>
                             <img src="img/underconstruction.gif">
                         <hr>
                     </center>
-                    <center><p><b>hint: use the arrows on the top right of the window to naigate through pages</b></p></center>
-                    <p>Welcome to my auesome web site !my name Is logan and i like to play compuetr games.</p>
-                    <p>This is my litle corner on the inter Net so i hope you enjot It. my favourite food is Potato and i am male,like Alpha male. add me on aim!!! <span style="color: red;">ashifter # 6159</span></p>
-                    <p>here are my Friends web sites .</p>
+                    <center>
+                        <p><b>hint: use the arrows in the top right of the window to navigate through pages</b></p>
+                    </center>
+                    <p>Welcome to my awesome web site! my name Is logan and i like to play computer games.</p>
+                    <p>some facts about me:</p>
+                    <ul>
+                        <li>
+                            i use microsoft Windows on my computer. <img src="img/windows.gif" id="emote">
+                        </li>
+                        <li>
+                            i live in the United states of america. <img src="img/usflag.gif" id="emote">
+                        </li>
+                        <li>
+                            my favorite computer part is the Floppy disk.<img src="img/floppy.gif" id="emote">
+                        </li>
+                    </ul>
+                    <marquee behavior="alternate" scrollamount="20"><p>my favorite picture album</p></marquee>
+                    <center>
+                        <img src="img/billgates.gif" id="thumb"><img src="img/software.gif" id="thumb"><img src="img/usflag.gif" id="thumb"><img src="img/computer.gif" id="thumb"><img src="img/hotstuff.gif" id="thumb"><img src="img/mac.gif" id="thumb"><img src="img/underconstruction.gif" id="thumb"><img src="img/windows.gif" id="thumb">
+                    </center>
+                    <marquee behavior="alternate" scrollamount="20"><p>my favorite picture album</p></marquee behavior="alternate" scrollamount="20">
+                    <p>This is my little corner on the InterNet so i hope you enjoy It... add me on discord!!! <span style="color: #FF0000;">ashifter#6159</span> i hope you enjoyed your visit!! I will add more pages in the future, stay tuned</p>
+                    <p>here are my Friends websites.</p>
                     <ul>
                         <li>
                             <a href="https://projsh.xyz/">projsh_'s site - projsh.xyz</a>
@@ -196,7 +199,7 @@
         <!-- Footer -->
         <div style="padding-top: 20px;">
             <center>
-                <img src="https://hitwebcounter.com/counter/counter.php?page=7203218&style=0038&nbdigits=7&type=page&initCount=0" title="User Stats" Alt="webcounterwebsite" style="border: 3px solid green;">                                      
+                <img src="https://hitwebcounter.com/counter/counter.php?page=7203218&style=0038&nbdigits=7&type=page&initCount=0" title="User Stats" Alt="Visitor Counter" style="border: 3px solid #00FF00;">                                      
                 <h6>
                     Copyright © 2020 Logan Lowe
                 </h6>
